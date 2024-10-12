@@ -49,3 +49,5 @@ publish.exe
 /bin
 /*/bin
 /*/obj
+/push.exe
+/publish.exe
