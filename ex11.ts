@@ -22,7 +22,7 @@ if (fs.existsSync(envPath)) {
         let s = await db.collection("students")
 
         // let shorts = await s.find({height:{$lte:170}}).sort({height:1}).toArray()
-        // console.log(shorts)
+        // console.log(shorts.length)
         
         // console.log(shorts.map(item=> item.height))
 

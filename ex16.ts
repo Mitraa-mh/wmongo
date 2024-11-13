@@ -21,23 +21,23 @@ if (fs.existsSync(envPath)) {
 
         let s = await db.collection("students")
 
-        let result = await s.updateOne({name:"Velasquez Bernard", "exam.name":"math"},{
-            $set:{
-                "exam.$.score":80
-            }
-        })
-        console.log(result)
-
-
-        // let result = await s.updateOne({name:"Velasquez Bernard", "violations":6},{
+        // let result = await s.updateOne({name:"Velasquez Bernard", "exam.name":"math"},{
         //     $set:{
-        //         "violations.$":8
+        //         "exam.$.score":85
         //     }
         // })
         // console.log(result)
 
 
-        //  let result = await s.updateOne({name:"Velasquez Bernard", "violations":6},{
+        // let result = await s.updateOne({name:"Velasquez Bernard", "violations":7},{
+        //     $set:{
+        //         "violations.$":6
+        //     }
+        // })
+        // console.log(result)
+
+
+        //  let result = await s.updateOne({name:"Velasquez Bernard", "violations":7},{
         //     $set:{
         //         "violations.$":{myfield:"test"}
         //     }

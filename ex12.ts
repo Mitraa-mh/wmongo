@@ -20,7 +20,8 @@ if (fs.existsSync(envPath)) {
         const db = client.db(process.env.MONGODB_DB);
 
         let s = await db.collection("students")
-
+        
+        
         // let result = await s.updateOne({name:"Velasquez Bernard"},{
         //     $set:{
         //         height:165
@@ -35,14 +36,14 @@ if (fs.existsSync(envPath)) {
         //     }
         // })
         // console.log(result)
+ 
 
-
-        let result = await s.updateOne({name:"Velasquez Bernard"},{
-            $set:{
-                "a.b":"c"
-            }
-        })
-        console.log(result)
+        // let result = await s.updateOne({name:"Velasquez Bernard"},{
+        //     $set:{
+        //         "a.b":"c"
+        //     }
+        // })
+        // console.log(result)
 
         // let result = await s.updateOne({ name: "Velasquez Bernard" }, {
         //     $set: {
